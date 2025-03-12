@@ -39,7 +39,7 @@ header {
 }
 .hobby-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 .contant{
@@ -63,10 +63,8 @@ header {
     border: none;
     cursor: pointer;
 }
-@media (max-width: 768px) {
-    .profile {
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
+@media (max-width: 576px) {
+    .hobby-grid {
+        grid-template-columns: 1fr;
     }
 }
